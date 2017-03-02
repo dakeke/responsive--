@@ -1,0 +1,61 @@
+/**
+ *  flex方式
+ */
+
+/*body {
+  margin: 10px;
+}
+
+.wrap {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+  margin: 0 auto;
+}
+
+.wrap > div {
+  width: 30%;
+  height: 0;
+  padding-bottom: 30%;
+  margin-bottom: calc(5%);
+  background-color: orange;
+  border-radius: 6%;
+}
+
+@media screen and (max-width: 600px) {
+  .wrap {
+    width: 100%;
+  }
+}*/
+
+/**
+ *  float方式
+ */
+
+
+.wrap {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.wrap > div {
+  float: left;
+  margin-right: calc(5%);
+  margin-bottom: calc(5%);
+  width: 30%;
+  height: 0;
+  padding-bottom: 30%;
+  background-color: orange;
+  border-radius: 6%;
+}
+
+.wrap > div:nth-child(3n) {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .wrap {
+    width: 100%;
+  }
+}
